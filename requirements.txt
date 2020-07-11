@@ -3,7 +3,7 @@ cachetools==4.1.1
 certifi==2020.4.5.1
 chardet==3.0.4
 defusedxml==0.6.0
-Django==2.1
+Django==2.2.13
 django-allauth==0.42.0
 google-api-core==1.21.0
 google-api-python-client==1.9.3
