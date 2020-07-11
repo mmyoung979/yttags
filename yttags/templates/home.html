@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>YT Tags</h1>
+        <h2 class="text-center">Find YouTube Video Tags</h2>
+        <form action="{% url 'tags' %}" method="POST">
+          {% csrf_token %}
+          {{ form }}
+          <br>
+          <input class="button" type="submit" name="submit">
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col px-5">
+        <h3>Keyword Tool for YouTube</h3>
+        <p>
+          Research what tags other YouTube videos are using.
+        </p>
+        <h3>How To Use</h3>
+        <p>
+          Enter a YouTube URL in the search bar above to look up a
+          specific video's meta tags, or use our
+          <a href="{% url 'keywords' %}">Keyword Research Tool</a> to find the
+          most commonly used tags for any given YouTube search.
+        </p>
+        <h3>How You Can Help</h3>
+        <p>
+          YT Tags currently depends on donations from people who find our
+          work useful and would like to see its development continue.
+        </p>
+        <a class="btn btn-primary mt-4" href="https://ko-fi.com/forwardvibe" target="_blank">Donate Here</a>
+        <h3>Open-Source</h3>
+        <p>
+          We are planning to make our code open-source in the near future.
+          If you want to contribute, keep checking back here for an update!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="space-60"></div>
+{% endblock %}

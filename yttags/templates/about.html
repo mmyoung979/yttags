@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+  <div class="container px-5">
+    <div class="row">
+      <div class="col-12">
+        <h1>YT Tags</h1>
+        <h2 class="text-center">A Forward Vibe Company</h2>
+        <h3>Background</h3>
+        <p>
+          YT Tags is a data analytics toolkit for YouTube created by
+          <a href="https://forwardvibe.com/" target="_blank">Forward Vibe</a>.
+        </p>
+        <h3>Tools</h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 mt-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tag Finder</h5>
+              <p class="card-text mb-3">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="{% url 'tags' %}" class="btn btn-primary">Try it out</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mt-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Keyword Research</h5>
+              <p class="card-text mb-3">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="{% url 'keywords' %}" class="btn btn-primary">Try it out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <h3>YouTube Tag Finder</h3>
+        <p>
+          Our <a href="{% url 'keywords' %}">Tag Finder Tool</a> will let you search a YouTube URL and
+          immediately see all of its attached video tags. According to Google
+          (the company that owns YouTube):
+        </p><br>
+        <blockquote class="blockquote border p-4">
+          <p>
+            Tags are descriptive keywords you can add to your video to help
+            viewers find your content.
+          </p>
+          <footer class="blockquote-footer">Google</footer>
+        </blockquote>
+        <h3>YouTube Keyword Research Tool</h3>
+        <p>Our <a href="{% url 'keywords' %}">Keyword Research Tool</a> will let
+          you search anything you might search for on YouTube, and it will give
+          you back a list of the most popularly used tags for the 20 highest
+          ranking videos.
+        </p>
+        <div class="space-60" />
+      </div>
+    </div>
+  </div>
+{% endblock %}
