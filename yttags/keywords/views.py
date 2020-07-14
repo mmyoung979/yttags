@@ -15,9 +15,6 @@ class Tag:
         self.tag = tag
         self.count = count
 
-    def get_count(self):
-        return self.count
-
 
 def keywords(request):
     # Form to determine YouTube Search
@@ -43,7 +40,7 @@ def keywords(request):
 
             # Create list of Tag objects
             tags = []
-            for tag in sorted(list(set(all_tags))):
+            for tag in sorted(set(all_tags)):
                 tags.append(Tag(tag, all_tags.count(tag)))
 
             # Output Tag objects
