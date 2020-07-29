@@ -26,7 +26,7 @@ export class Tags extends Component {
               <tr key={tag.youtube_id}>
                 <td className="col-lg-3 col-md-4 col-sm-6 col-xs-12 text-center">
                   <a href={"https://www.youtube.com/watch?v=" + tag.youtube_id} target="_blank">
-                    <p class="tag">{tag.youtube_id}</p>
+                    <p className="tag">{tag.youtube_id}</p>
                   </a>
                 </td>
               </tr>
