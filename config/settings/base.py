@@ -19,7 +19,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
 
+    # 3rd Party Applications
+    'rest_framework',
+
     # Local
+    'yttags.frontend',
     'yttags.tags',
     'yttags.keywords',
 ]
@@ -93,6 +97,7 @@ USE_TZ = False
 # STATIC FILES
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'yttags/frontend/static'),
     os.path.join(BASE_DIR, 'yttags/tags/static'),
     os.path.join(BASE_DIR, 'yttags/keywords/static'),
 ]

@@ -1,9 +1,14 @@
 # Django imports
 from django.shortcuts import render
 
+# 3rd party imports
+from rest_framework import serializers
+
 # Project imports
 from .forms import TagsForm
 from .utils import get_video_data, youtube_search
+from .models import Video
+from yttags.frontend.api.serializers import VideoSerializer
 
 
 # Homepage
@@ -40,7 +45,11 @@ def tags(request):
 
             # Filter through video data for output
             try:
+                # Get video
                 video = get_video_data(video_id)
+                video_object = Video()
+                video_object.youtube_id = video_id
+                video_object.save()
                 context['title'] = video['title']
                 context['thumbnail'] = video['thumbnail']
                 context['tags'] = video['tags']

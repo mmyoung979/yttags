@@ -2,4 +2,5 @@
 from django.db import models
 
 
-# Models
+class Video(models.Model):
+    youtube_id = models.CharField(max_length=50, blank=True)

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="mb-5">React, Redux, Node.js Implementation</h1>
+        <div id="app"></div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block footer_js %}
+  <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+{% endblock %}

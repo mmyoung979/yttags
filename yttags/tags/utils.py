@@ -8,7 +8,9 @@ from googleapiclient.discovery import build
 # Project imports
 try:
     from config.settings.production import YOUTUBE_KEY
-except ImportError as e:
+except ImportError:
+    from config.settings.local import YOUTUBE_KEY
+except KeyError:
     from config.settings.local import YOUTUBE_KEY
 
 # Global variables

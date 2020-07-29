@@ -1,0 +1,40 @@
+{
+  "name": "yttags",
+  "version": "1.0.0",
+  "description": "![YT Tags Rich Preview](yttags/static/img/yttags-rich-preview-banner.jpg) -------------------------------------------------------------------------------- # YT Tags https://yttags.com/",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch ./yttags/frontend/src/index.js --output ./yttags/frontend/static/js/main.js",
+    "build": "webpack --mode development ./yttags/frontend/src/index.js --output ./yttags/frontend/static/js/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmyoung979/yttags.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmyoung979/yttags/issues"
+  },
+  "homepage": "https://github.com/mmyoung979/yttags#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0"
+  }
+}
