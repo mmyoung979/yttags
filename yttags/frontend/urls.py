@@ -6,5 +6,5 @@ from . import views
 
 # URLs
 urlpatterns = [
-    path('react', views.react, name='react'),
+    path('react/', views.react, name='react'),
 ]
