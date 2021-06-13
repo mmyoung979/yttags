@@ -1,7 +1,7 @@
 ![YT Tags Rich Preview](yttags/static/img/yttags-rich-preview-banner.jpg)
 --------------------------------------------------------------------------------
 # YT Tags
-https://yttags.com/
+[Website has been taken down]
 
 ## YouTube Analytics Tools
 * [Keyword Research Tool](https://yttags.com/keywords)
